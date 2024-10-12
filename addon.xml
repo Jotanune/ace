@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.acestream" 
+       name="AceStream Addon" 
+       version="1.0.0" 
+       provider-name="TuNombre">
+    <extension point="xbmc.python.pluginsource" library="plugin.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="es">Reproductor de enlaces AceStream desde una web</summary>
+        <description lang="es">Este addon permite reproducir enlaces AceStream desde una web en Kodi</description>
+        <platform>all</platform>
+    </extension>
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+    </requires>
+    <extension point="xbmc.python.plugin" library="plugin.py">
+        <provides>video</provides>
+    </extension>
+</addon>
